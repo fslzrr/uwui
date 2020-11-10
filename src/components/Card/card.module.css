@@ -1,0 +1,9 @@
+@import "../../global.module.css";
+
+div.ffCard {
+  padding: 2em;
+  overflow: hidden;
+  border-radius: var(--ff-radius);
+  background: var(--ff-color-bg-1);
+  box-shadow: var(--ff-shadow-1);
+}

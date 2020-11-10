@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  /* base */
+  --ff-color-main: rgb(125, 112, 186);
+  --ff-color-success: rgb(161, 232, 135);
+  --ff-color-error: rgb(232, 120, 103);
+  --ff-color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* background */
+  --ff-color-bg-1: rgb(255, 255, 255);
+  --ff-color-bg-2: rgb(245, 245, 245);
+  --ff-color-bg-3: rgb(235, 235, 235);
+  --ff-color-bg-4: rgb(225, 225, 225);
+
+  /* text */
+  --ff-color-text-primary: rgb(47, 47, 47);
+  --ff-color-text-secondary: rgb(127, 127, 127);
+  --ff-color-text-clear: white;
+
+  /* --- filters --- */
+  --ff-filter-button: saturate(150%);
+  --ff-filter-heading: brightness(75%);
+
+  /* --- box shadow --- */
+  --ff-shadow-1: 0 0 2em 0 var(--ff-color-shadow);
+  --ff-shadow-2: 0 0 1em 0 var(--ff-color-shadow);
+  --ff-shadow-3: 0 0 0.3em 0 var(--ff-color-shadow);
+  --ff-shadow-4: 0 0 0.1em 0 var(--ff-color-shadow);
+
+  /* --- measures --- */
+  --ff-radius: 1rem;
+
+  /* --- timings --- */
+  --ff-timing-hover: 200ms;
+
+  /* --- global styles --- */
+  font-family: "Lato", sans-serif;
+  color: var(--ff-color-text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* base */
+    --ff-color-shadow: rgba(0, 0, 0, 0.4);
+
+    /* background */
+    --ff-color-bg-1: rgb(10, 10, 10);
+    --ff-color-bg-2: rgb(20, 20, 20);
+    --ff-color-bg-3: rgb(20, 20, 20);
+    --ff-color-bg-4: rgb(40, 40, 40);
+
+    /* text */
+    --ff-color-text-primary: rgb(255, 255, 255);
+
+    /* --- filters --- */
+    --ff-filter-heading: brightness(175%);
+  }
+}

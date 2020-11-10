@@ -1,0 +1,43 @@
+@import "../../global.module.css";
+
+.ffHeading {
+  font-weight: 900;
+  margin: 0.2em 0;
+}
+
+.ffHeading.ffHeadingPrimary {
+  color: var(--ff-color-main);
+  filter: var(--ff-filter-heading);
+}
+
+.ffHeading.ffHeadingColorless {
+  color: var(--ff-color-text-primary);
+}
+
+.ffHeading.ffHeadingSecondary {
+  color: var(--ff-color-text-secondary);
+}
+
+.ffH1 {
+  font-size: 3em;
+}
+
+.ffH2 {
+  font-size: 2.25em;
+}
+
+.ffH3 {
+  font-size: 1.75em;
+}
+
+.ffH4 {
+  font-size: 1.5em;
+}
+
+.ffH5 {
+  font-size: 1.25em;
+}
+
+.ffH6 {
+  font-size: 1em;
+}

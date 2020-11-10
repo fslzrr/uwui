@@ -1,0 +1,7 @@
+@import "../../../global.module.css";
+
+div.ffCardHeader {
+  margin: -2em -2em 2em -2em;
+  padding: 1em 2em;
+  background: var(--ff-color-bg-2);
+}
