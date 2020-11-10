@@ -33,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }: ButtonProps) => {
   const statusStyles = useMemo(() => getStatusStyles({ stretch }), [stretch]);
+
   return (
     <button
       className={`${styles.ffButton} ${TypeStyles[type]} ${statusStyles}`}
