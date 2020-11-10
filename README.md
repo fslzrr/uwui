@@ -1,28 +1,26 @@
-# ff-ui
+# uwui
 
 > personal components library
 
-[![NPM](https://img.shields.io/npm/v/ff-ui.svg)](https://www.npmjs.com/package/ff-ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/uwui.svg)](https://www.npmjs.com/package/uwui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save ff-ui
+npm install --save @fslzrr/uwui
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import { Button } from "@fslzrr/uwui";
 
-import MyComponent from 'ff-ui'
-import 'ff-ui/dist/index.css'
+const MyComponent: React.FC = (props) => {
+  return <Button>Click me!</Button>;
+};
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+export default MyComponent;
 ```
 
 ## License

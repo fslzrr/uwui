@@ -33,6 +33,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }: ButtonProps) => {
   const statusStyles = useMemo(() => getStatusStyles({ stretch }), [stretch]);
+
   return (
     <button
       className={`${styles.ffButton} ${TypeStyles[type]} ${statusStyles}`}
@@ -43,5 +44,5 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export { ButtonProps };
+export type { ButtonProps };
 export default Button;
