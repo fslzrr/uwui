@@ -17,9 +17,9 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-      - run: yarn --frozen-lockfile
+        run: yarn --frozen-lockfile
       - name: Run tests
-      - run: yarn test
+        run: yarn test
 
   publish-npm:
     needs: build
@@ -30,8 +30,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: yarn --frozen-lockfile
-      - run: yarn publish
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Publish npm package
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -44,7 +46,9 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-      - run: yarn --frozen-lockfile
-      - run: yarn publish
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+      - name: Publish github package
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
