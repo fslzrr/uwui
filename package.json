@@ -1,10 +1,10 @@
 {
-  "name": "fslzrr-ui",
+  "name": "@fslzrr/uwui",
   "version": "0.0.1-alpha",
   "description": "Personal UI components library",
   "author": "fslzrr",
   "license": "MIT",
-  "repository": "fslzrr/fslzrr-ui",
+  "repository": "fslzrr/uwui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -24,9 +24,6 @@
     "deploy": "gh-pages -d example/build",
     "storybook": "start-storybook -p 6006 --no-dll",
     "build-storybook": "build-storybook --no-dll"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "peerDependencies": {
     "react": "^16.0.0"
