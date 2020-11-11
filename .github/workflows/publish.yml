@@ -33,7 +33,7 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Publish npm package
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
@@ -49,6 +49,6 @@ jobs:
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Publish github package
-        run: yarn publish
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
