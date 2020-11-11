@@ -46,7 +46,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: "@octocat"
+          scope: "@fslzrr"
       - name: Install dependencies
         run: yarn --frozen-lockfile
       - name: Publish github package
