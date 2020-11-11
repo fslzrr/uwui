@@ -23,7 +23,6 @@ function getStatusStyles(args: Record<ButtonStatus, boolean>) {
 type ButtonProps = {
   type?: ButtonTypes;
   stretch?: boolean;
-  children: JSX.Element;
 } & React.HTMLProps<HTMLButtonElement>;
 
 const Button: React.FC<ButtonProps> = ({
